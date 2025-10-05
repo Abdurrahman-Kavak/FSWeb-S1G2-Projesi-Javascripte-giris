@@ -109,6 +109,18 @@ function oyun(oyuncu, bilgisayar) {
 Şimdi kendi seçtiğin bir seçime karşı bilgisayarın rastgele oluşturduğu seçimi yukarıda yazdığın oyun fonsiyonu ile oynayın ve sonucu console'a yazdırın.
 Örn: console.log(oyun("Makas",bilgisayarinSecimi()))
 */
+function bilgisayarinSecimi() {
+  const rastgeleSayi = Math.floor(Math.random() * 3);
+  let secim;
+  if (rastgeleSayi < 0.33) {
+    secim = "Taş";
+  } else if (rastgeleSayi < 0.66) {
+    secim = "Kağıt";
+  } else {
+    secim = "Makas";
+  }
+  return secim;
+}
 
 /* Görev 4 : Metrik Dönüştürücü */
 

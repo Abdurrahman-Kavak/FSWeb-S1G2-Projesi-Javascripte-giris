@@ -112,9 +112,9 @@ function oyun(oyuncu, bilgisayar) {
 function bilgisayarinSecimi() {
   const rastgeleSayi = Math.floor(Math.random() * 3);
   let secim;
-  if (rastgeleSayi < 0.33) {
+  if (rastgeleSayi === 1) {
     secim = "Taş";
-  } else if (rastgeleSayi < 0.66) {
+  } else if (rastgeleSayi === 2) {
     secim = "Kağıt";
   } else {
     secim = "Makas";
